@@ -1,12 +1,16 @@
-<head>
-    <meta property="og:title" content="test" id="meta" />
+<head >
+    <script
+        src="https://code.jquery.com/jquery-3.6.3.js"
+        integrity="sha256-nQLuAZGRRcILA+6dMBOvcRh5Pe310sBpanc6+QBmyVM="
+        crossorigin="anonymous"></script>
 
+
+    
 </head>
-<script>
-    const queryString = window.location.search;
+<script type='text/javascript'>
+    $(document).ready(function(){
 
-    const urlParams = new URLSearchParams(queryString);
-
-    const product = urlParams.get('title')
-    document.getElementById('meta').content = product
+        $('head').append( '<meta name="og:title" content="hellosss">');
+    })
 </script>
+<!--BUILD 2--!>
