@@ -1,0 +1,12 @@
+<head>
+    <meta property="og:title" content="test" id="meta" />
+
+</head>
+<script>
+    const queryString = window.location.search;
+
+    const urlParams = new URLSearchParams(queryString);
+
+    const product = urlParams.get('title')
+    document.getElementById('meta').content = product
+</script>
